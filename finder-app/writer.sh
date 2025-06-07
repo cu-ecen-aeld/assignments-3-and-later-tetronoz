@@ -16,7 +16,7 @@ if [[ $? -eq 1 ]]; then
     exit 1
 fi
 
-echo "${writestr}" > "${writefile}" 
+echo "${writestr}" > "${writefile}"
 if [[ $? -eq 1 ]]; then
     echo "Error creating a file"
     exit 1
