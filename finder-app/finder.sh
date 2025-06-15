@@ -3,12 +3,12 @@
 filesdir=$1
 searchstr=$2
 
-if [[ $# -lt 2 ]]; then
+if [ $# -lt 2 ]; then
     echo "One of the input prameters is missing..."
     exit 1
 fi
 
-if [[ ! -d ${filesdir} ]]; then
+if [ ! -d "${filesdir}" ]; then
     echo "${filesdir} directory doesn't exist..."
     exit 1
 fi
